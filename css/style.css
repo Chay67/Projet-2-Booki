@@ -71,9 +71,33 @@ a {
     box-sizing: border-box;
 }
 
+button#recherche {
+    font-size: 18px;
+}
+
+p.filtres {
+    font-size: 18px;
+}
+
+button#filtres {
+    font-size: 17px;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+h3 {
+    font-size: 16px;
+}
+
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+}
+
+a {
+    font-size: 18px;
 }
 
 /****** Populaires ***********/
@@ -121,8 +145,55 @@ a {
     margin-bottom: 5px;
 }
 
+/****** Nav ***********/
 
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.logo {
+    width: 61.09px;
+    height: 19px;
+    top: 30px;
+    left: 50px;
+}
+
+.menu {
+    display: flex;
+    gap: 16px;
+    list-style: none;
+}
+
+.menu a {
+    color: #000000;
+}
+
+/****** Header ***********/
+
+h1 {font-size: 22px;}
+
+p.subtitle {
+    font-size: 16px;
+}
+
+p.result {
+    font-size: 16px;
+}
+
+/****** Footer ***********/
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-end;
+}
+
+ul.footer-menu {
+    display: block;
+    list-style: none;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
