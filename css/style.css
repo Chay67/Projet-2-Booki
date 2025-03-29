@@ -91,6 +91,10 @@ h3 {
     font-size: 16px;
 }
 
+p.card-subtitle {
+    font-size: 14px;
+}
+
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
@@ -193,6 +197,14 @@ footer {
 ul.footer-menu {
     display: block;
     list-style: none;
+}
+
+li.footer-text.footer-column-title {
+    font-size: 18px;
+}
+
+li.footer-text {
+    font-size: 16px;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
