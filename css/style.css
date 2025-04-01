@@ -14,6 +14,10 @@
 }
 
 body {
+    margin: 0;
+}
+
+body {
     display: flex;
     justify-content: center;
 }
@@ -155,6 +159,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 20px 0;
 }
 
 .logo {
@@ -168,10 +173,19 @@ nav {
     display: flex;
     gap: 16px;
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .menu a {
     color: #000000;
+    text-decoration: none;
+    padding-top: 14px;
+}
+
+.menu a:hover {
+    color: var(--main-color);
+    border-top: 2px solid var(--main-color);
 }
 
 /****** Header ***********/
@@ -184,6 +198,140 @@ p.subtitle {
 
 p.result {
     font-size: 16px;
+}
+
+header {
+    margin: 30px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.card-subtitle {
+    margin: 8px 0 35px 0;
+}
+
+/****** Search Form ***********/
+
+.search-form {
+    display: flex;
+    align-items: center;
+    max-width: 377px;
+    height: 49px;
+    margin-bottom: 35px;
+}
+
+.search-form .location-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-bg-color);
+    width: 50px;
+    height: 49px;
+    border-radius: 15px 0 0 15px;
+}
+
+.search-form .location-icon i {
+    color: black;
+}
+
+.search-form input {
+    height: 49px;
+    border: 1px solid var(--main-bg-color);
+    padding: 0 24px;
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+    width: 195px;
+    box-sizing: border-box;
+}
+
+.search-form input::placeholder {
+    color: black;
+    opacity: 1;
+}
+
+.search-form button {
+    height: 49px;
+    background-color: var(--main-color);
+    color: white;
+    font-weight: 700;
+    border: none;
+    border-radius: 0 15px 15px 0;
+    padding: 0 24px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.search-form button:hover {
+    background-color: #003399;
+}
+
+/****** Filter ***********/
+
+.filters-group {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 35px;
+}
+
+.filters-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.filters-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.filter-button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 4px 19px;
+    border: 2px solid #D9D9D9;
+    border-radius: 25px;
+    background: white;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.filter-button:hover {
+    background-color: var(--filter-bg-color);
+}
+
+/****** Info group ***********/
+
+.info-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.info-icon {
+    width: 24px;
+    height: 24px;
+    border: 1px solid #D9D9D9;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-icon i {
+    font-size: 10px;
+}
+
+.info-group p {
+    margin: 0;
 }
 
 /****** Footer ***********/
