@@ -1,15 +1,26 @@
 <!DOCTYPE html>
+<!-- Indique au navigateur qu'on utilise le HTML5 -->
 <html lang="fr">
+<!-- Langue du document définie sur le français -->
   <head>
+    <!-- Encodage des caractères en UTF-8 -->
     <meta charset="UTF-8" />
+    <!-- Permet au site d'être responsive sur les différents écrans -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Titre de la page (affiché dans l'onglet du navigateur) -->
     <title>Booki</title>
+
+    <!-- Pré-connexion à Google Fonts pour accélérer le chargement -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Importation de la police Raleway depuis Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Importation des icônes Font Awesome (version 6.2.1) -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -17,7 +28,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <!-- Feuille de style principale du projet -->
     <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- Une autre version de Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -29,8 +44,11 @@
 
   <body>
     <div class="main-container">
+      <!-- Barre de navigation -->
       <nav>
+        <!-- Logo du site -->
         <img class="logo" src="./images/logo/Booki.png" alt="Logo Booki" />
+        <!-- Menu de navigation ancré vers les sections principales -->
         <ul class="menu">
           <li><a href="#hebergements">Hébergements</a></li>
           <li><a href="#activites">Activités</a></li>
@@ -38,13 +56,19 @@
       </nav>
 
       <header>
+        <!-- Titre principal du site -->
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+        <!-- Sous-titre -->
         <p class="subtitle">En plein centre-ville ou en pleine nature</p>
+        <!-- Formulaire de recherche -->
         <form class="search-form">
+            <!-- Icône de localisation -->
           <div class="location-icon">
             <i class="fa-solid fa-location-dot"></i>
           </div>
+          <!-- Champ texte pour entrer la ville -->
           <input type="text" placeholder="Marseille, France" />
+          <!-- Bouton de recherche -->
           <button type="submit">
             <span id="searchIcon">
               <i class="fa-solid fa-magnifying-glass"></i>
@@ -52,9 +76,11 @@
             <span id="searchText"> Rechercher </span>
           </button>
         </form>
+
         <div class="filters-group">
           <p class="filters-title">Filtres</p>
           <div class="filters-buttons">
+            <!-- Chaque bouton représente un filtre avec une icône -->
             <button class="filter-button">
               <i class="fa-solid fa-money-bill-wave"></i>
               <span>Économique</span>
@@ -73,6 +99,7 @@
             </button>
           </div>
         </div>
+
         <div class="info-group">
           <div class="info-icon">
             <i class="fa-solid fa-info"></i>
@@ -88,6 +115,8 @@
           <section id="hebergements" class="hebergements">
             <h2 class="section-title">Hébergements à Marseille</h2>
             <div class="hebergements-cards">
+                <!-- Carte d'hébergement : chaque lien contient un article avec image, titre, prix et note -->
+
               <a class="card" href="#">
                 <article>
                   <img
@@ -256,6 +285,7 @@
                 </article>
               </a>
             </div>
+            <!-- Lien pour voir plus d’hébergements -->
             <a class="show-more" href="#">Afficher plus</a>
           </section>
 
@@ -265,6 +295,7 @@
               <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
             </div>
             <div class="populaires-cards">
+                <!-- Carte d'hébergement populaire : chaque lien contient un article avec image, titre, prix et note -->
               <a href="#">
                 <article class="card">
                   <img
@@ -359,6 +390,7 @@
             <h2 class="section-title">Activités à Marseille</h2>
           </div>
           <div>
+            <!-- Cartes d'activités touristiques avec image et titre -->
             <a href="#">
               <article class="card">
                 <img
@@ -411,6 +443,7 @@
       </main>
 
       <footer>
+        <!-- Trois colonnes de liens dans le pied de page -->
         <ul class="footer-menu">
           <li class="footer-text footer-column-title">À propos</li>
           <li class="footer-text"><a href="#">Fonctionnement du site</a></li>

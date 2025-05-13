@@ -1,144 +1,144 @@
 /****** General ***********/
 * {
-  font-family: "Raleway", sans-serif;
-  box-sizing: border-box;
+  font-family: "Raleway", sans-serif; /* Applique la police "Raleway" à tous les éléments */
+  box-sizing: border-box; /* Inclut le padding et la bordure dans les dimensions (width/height) */
 }
 
 :root {
-  --main-color: #0065fc;
-  --main-bg-color: #f2f2f2;
-  --filter-bg-color: #deebff;
+  --main-color: #0065fc; /* Couleur principale (bleu) */
+  --main-bg-color: #f2f2f2; /* Couleur de fond principale (gris clair) */
+  --filter-bg-color: #deebff; /* Couleur de fond utilisée au survol des filtres */
 }
 
 .fa-solid {
-  color: var(--main-color);
+  color: var(--main-color); /* Colore les icônes Font Awesome en bleu */
 }
 
 body {
-  margin: 0;
-  display: flex;
-  justify-content: center;
+  margin: 0; /* Supprime la marge par défaut */
+  display: flex; /* Utilise flexbox pour centrer le contenu */
+  justify-content: center; /* Centre horizontalement le contenu principal */
 }
 
 .main-container {
-  width: 100%;
-  max-width: 1440px;
-  box-sizing: border-box;
+  width: 100%; /* Prend toute la largeur disponible */
+  max-width: 1440px; /* Limite la largeur maximale à 1440px */
+  box-sizing: border-box; /* Empêche que le padding dépasse la largeur */
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+  color: inherit; /* Les liens héritent de la couleur de leur parent */
+  text-decoration: none; /* Supprime le soulignement par défaut */
 }
 
 .section-title {
-  margin: 0;
-  font-size: 22px;
+  margin: 0; /* Supprime la marge */
+  font-size: 22px; /* Définit la taille de la police */
 }
 
 .card {
-  display: block;
-  background-color: white;
-  border-radius: 20px;
-  padding: 5px;
-  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  display: block; /* Rend la carte cliquable (tout le bloc) */
+  background-color: white; /* Fond blanc */
+  border-radius: 20px; /* Coins arrondis */
+  padding: 5px; /* Espacement intérieur */
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1)); /* Ombre portée subtile */
 }
 
 .card img {
-  object-fit: cover;
+  object-fit: cover; /* Remplit le conteneur sans déformer l’image */
 }
 
 .card-title {
-  font-size: 16px;
+  font-size: 16px; /* Taille du texte du titre */
 }
 
 .euro {
-  font-weight: 700;
+  font-weight: 700; /* Gras pour le prix */
 }
 
 .neutral-star {
-  color: var(--main-bg-color);
+  color: var(--main-bg-color); /* Couleur grise pour les étoiles inactives */
 }
 
-/****** Nav ***********/
+/****** Navigation ***********/
 
 nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 50px;
+  display: flex; /* Utilise Flexbox pour aligner les éléments du menu */
+  justify-content: space-between; /* Espace entre le logo et les liens */
+  align-items: center; /* Centre verticalement les éléments */
+  padding: 20px 50px; /* Espacement intérieur */
 }
 
 .logo {
-  width: 61.09px;
-  height: 19px;
-  top: 30px;
-  left: 50px;
+  width: 61.09px; /* Largeur du logo */
+  height: 19px; /* Hauteur du logo */
+  top: 30px; /* Position */
+  left: 50px; /* Position */
 }
 
 .menu {
-  display: flex;
-  gap: 70px;
-  list-style: none;
+  display: flex; /* Affiche les liens horizontalement */
+  gap: 70px; /* Espace entre les éléments du menu */
+  list-style: none; /* Supprime les puces */
   margin: 0;
   padding: 0;
 }
 
 .menu a {
-  color: #000000;
-  text-decoration: none;
+  color: #000000; /* Texte noir */
+  text-decoration: none; /* Supprime le soulignement */
   padding-top: 18px;
   padding-bottom: 18px;
 }
 
 .menu a:hover {
-  color: var(--main-color);
-  border-top: 2px solid var(--main-color);
+  color: var(--main-color); /* Change la couleur au survol */
+  border-top: 2px solid var(--main-color); /* Bordure en haut pour indiquer la sélection */
 }
 
 /****** Header ***********/
 
 h1 {
-  font-size: 22px;
+  font-size: 22px; /* Taille du titre principal */
 }
 
 p.subtitle {
-  font-size: 16px;
-  margin-bottom: 30px;
+  font-size: 16px; /* Taille du sous-titre */
+  margin-bottom: 30px; /* Espace en bas */
 }
 
 p.result {
-  font-size: 16px;
+  font-size: 16px; /* Taille du texte de résultat */
 }
 
 header {
-  margin: 40px 0;
-  padding: 0 50px;
+  margin: 40px 0; /* Marge en haut et en bas */
+  padding: 0 50px; /* Espacement intérieur (gauche et droite) */
 }
 
 header h1 {
   font-size: 22px;
-  font-weight: 700;
+  font-weight: 700; /* Titre en gras */
 }
 
 /****** Search Form ***********/
 
 .search-form {
-  display: flex;
-  align-items: center;
-  max-width: 377px;
-  height: 49px;
-  margin-bottom: 35px;
+  display: flex; /* Met les éléments sur une même ligne */
+  align-items: center; /* Centre verticalement */
+  max-width: 377px; /* Largeur maximale */
+  height: 49px; /* Hauteur fixe*/
+  margin-bottom: 35px; /* Espace en bas (sous le formulaire) */
 }
 
 .search-form .location-icon {
-  display: flex;
+  display: flex; /* Centrage de l'icône */
   align-items: center;
   justify-content: center;
-  background-color: var(--main-bg-color);
+  background-color: var(--main-bg-color); /* Fond gris clair */
   height: 49px;
-  border-radius: 15px 0 0 15px;
-  aspect-ratio: 1 / 1;
+  border-radius: 15px 0 0 15px; /* Coins arrondis à gauche */
+  aspect-ratio: 1 / 1; /* Carré */
 }
 
 .search-form .location-icon i {
@@ -147,8 +147,8 @@ header h1 {
 
 .search-form input {
   height: 49px;
-  border: 1px solid var(--main-bg-color);
-  padding: 0 24px;
+  border: 1px solid var(--main-bg-color); /* Bordure grise */
+  padding: 0 24px; /* Espacement intérieur */
   font-size: 18px;
   font-weight: 700;
   color: black;
@@ -163,20 +163,20 @@ header h1 {
 
 .search-form button {
   height: 49px;
-  background-color: var(--main-color);
-  color: white;
+  background-color: var(--main-color); /* Fond bleu */
+  color: white; /* Texte blanc */
   font-weight: 700;
   border: none;
-  border-radius: 0 15px 15px 0;
+  border-radius: 0 15px 15px 0; /* Coins arrondis à droite */
   padding: 0 24px;
   font-size: 18px;
-  cursor: pointer;
+  cursor: pointer; /* Curseur pointeur au survol */
   display: flex;
   align-items: center;
 }
 
 #searchIcon {
-  display: none;
+  display: none; /* Masque l'icône de recherche par défaut (pour mobile) */
 }
 
 .search-form button:hover {
@@ -186,9 +186,9 @@ header h1 {
 /****** Filter ***********/
 
 .filters-group {
-  display: flex;
+  display: flex; /* Regroupe les filtres horizontalement */
   align-items: center;
-  gap: 15px;
+  gap: 15px; /* Espace entre les boutons */
   margin-bottom: 35px;
 }
 
@@ -205,12 +205,12 @@ header h1 {
 }
 
 .filter-button {
-  display: flex;
+  display: flex; /* Icone + texte */
   align-items: center;
   gap: 10px;
   padding: 12px 19px;
-  border: 2px solid #d9d9d9;
-  border-radius: 25px;
+  border: 2px solid #d9d9d9; /* Bordure grise */
+  border-radius: 25px; /* Coins arrondis */
   background: white;
   font-size: 17px;
   font-weight: 700;
@@ -218,7 +218,7 @@ header h1 {
 }
 
 .filter-button:hover {
-  background-color: var(--filter-bg-color);
+  background-color: var(--filter-bg-color); /* Fond bleu clair au survol */
 }
 
 /****** Info group ***********/
@@ -250,7 +250,7 @@ header h1 {
 /****** Hebergements And Populaires ***********/
 
 .hebergements-and-populaires {
-  display: flex;
+  display: flex; /* 2 colonnes côte à côte */
   justify-content: space-between;
   padding: 0 50px;
 }
@@ -290,7 +290,7 @@ p.card-subtitle {
 /****** Hebergements ***********/
 
 .hebergements {
-  width: 65%;
+  width: 65%; /* Colonne principale */
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -345,7 +345,7 @@ a {
 /****** Populaires ***********/
 
 .populaires {
-  width: 32%;
+  width: 32%; /* Colonne secondaire */
 }
 
 .populaires-title {
@@ -391,9 +391,9 @@ a {
 /****** Activités ***********/
 
 .activites {
-  padding: 30px 50px;
+  padding: 30px 50px; /* Espacement intérieur */
   margin: 0 30px;
-  gap: 30px;
+  gap: 30px; /* Espace entre les éléments (utile avec flex ou grid) */
 }
 
 .activites .section-title {
@@ -438,9 +438,9 @@ a {
 /****** Footer ***********/
 
 footer {
-  background-color: var(--main-bg-color);
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  background-color: var(--main-bg-color); /* Fond gris clair */
+  display: grid; 
+  grid-template-columns: repeat(3, 1fr); /* Trois colonnes égales */
   padding: 20px 0 15px;
 
   margin: 0 50px;
@@ -472,7 +472,7 @@ li.footer-text > a {
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
   .filters-group {
-    flex-direction: column;
+    flex-direction: column; /* Passe en colonne sur tablettes */
     align-items: flex-start;
   }
 
